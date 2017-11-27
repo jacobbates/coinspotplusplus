@@ -4,7 +4,7 @@
 
 This extension is provided FREE, requires no permissions to be accepted in Chrome and is Open Sourced making code available for your inspection.
 
-[![Coinspot++ Screenshot](https://lh3.googleusercontent.com/j89VXVr8fA3FM6aqX_6q5H5BIIpi4Sslws7wtb5Tl-G-Pn5qJav3jMEBY0JJyPQaH13vLkYuhA=w640-h400-e365)](https://chrome.google.com/webstore/detail/coinspot%20%20/kkhjbgfpkliinnoaibhkcifeddpechfc)
+[![Coinspot++ Screenshot](https://github.com/jacobbates/coinspotplusplus/blob/master/images/screenshot1_1.jpg?raw=true)](https://chrome.google.com/webstore/detail/coinspot%20%20/kkhjbgfpkliinnoaibhkcifeddpechfc)
 
 Coinspot++ is not affiliated with Coinspot or coinspot.com.au.
 
