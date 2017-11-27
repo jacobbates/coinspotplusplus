@@ -1,6 +1,6 @@
 # Coinspot++ Google Chrome Extension
 
-[Coinspot++](https://github.com/jacobbates/coinspotplusplus/) is an unofficial Chrome extension for [Coinspot Australia](https://coinspot.com.au) BUY & SELL pages that adds enhanced filtering of coins to the website. This extension adds additional accessibility to Coinspot by adding pagination, sortable columns and quick search functionality.
+[Coinspot++](https://github.com/jacobbates/coinspotplusplus/) is an unofficial Chrome extension for [Coinspot Australia's](https://coinspot.com.au) tradecoins page that adds enhanced sorting of coins to the website. This extension adds additional accessibility to Coinspot by adding pagination, sortable columns and quick search functionality.
 
 This extension is provided FREE, requires no permissions to be accepted in Chrome and is Open Sourced making code available for your inspection.
 
@@ -16,13 +16,12 @@ We recommend bookmarking these pages in Chrome if you frequent them often. Advan
 
 ### Effected Pages
 
-Coinspot++ will currently ONLY effect the following pages:
+Coinspot++ will currently ONLY effect the following page:
 * https://www.coinspot.com.au/tradecoins
-* https://www.coinspot.com.au/sellallcoins
 
 ## Features
 
-* Converts BUY/SELL listings into a **Data Table**
+* Converts 'tradecoins' page coin listing into a **Data Table**
 * Adds **Pagination** to reduce page size | 20, 50 or 100 coins per page.
 * Adds **Quick Search** input for finding specific coins or data
 * Adds **Sortable Columns** for filtering by Coin, Buy Rate, Market Cap and 24-hour Change (default is Market Cap).
