@@ -43,4 +43,4 @@ Donation Address: [1KmdDF2QtBsacEPtqEi3vXqciJjcmiCS36](https://blockchain.info/a
 
 ## License
 
-This project is licensed under the GNU AGPLv3 License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU AGPLv3 License - see the [LICENSE.txt](LICENSE.txt) file for details.
