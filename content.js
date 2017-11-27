@@ -1,7 +1,7 @@
 	/*
 	Coinspot++ Google Chrome Extension
-	Version: 1.0.2
-	Unofficial coinspot.com.au sorting enhancement for BUY/SELL pages
+	Version: 1.1.0
+	Unofficial coinspot.com.au sorting enhancement for tradecoins page
 	Author: Jacob A Bates (https://github.com/jacobbates)
 	License: GNU AGPLv3 (https://www.gnu.org/licenses/agpl-3.0.txt)
 	
@@ -44,23 +44,19 @@
 						var tr = $('<tr>');
 						$(row).children("div").each(function(iii, col){
 							var th = $('<th>');
-							if(iii!==4){
-								if(iii==2||iii==5){
-									th.append($(this).html()).addClass('hidden-xs hidden-sm');
-								}else{
-									colhtml = $(this).html()
-									if(iii==1){
-									    var str = colhtml.split(" ");
-									    colhtml = str[0]+'<span class="hidden-xs hidden-sm"> '+str[1]+'</span>';
-									}
-									if(iii==3){
-									    var str = colhtml.split(" ");
-									    colhtml = str[0]+'<span class="hidden-xs hidden-sm"> '+str[1]+'</span>';
-									}
-									th.append(colhtml);
+							if(iii==3||iii==5){
+								//If MarketCap OR Buttons Col
+								th.append($(this).html()).addClass('hidden-xs hidden-sm');
+							}else{
+								colhtml = $(this).html()
+								if(iii==1||iii==2||iii==4){
+									//If Buy OR Sell OR Change Col 
+								    var str = colhtml.split(" ");
+								    colhtml = str[0]+'<span class="hidden-xs hidden-sm"> '+str[1]+'</span>';
 								}
-								tr.append(th).addClass('row-classss');
+								th.append(colhtml);
 							}
+							tr.append(th).addClass('row-classss');
 						});
 						if (!isOdd(i)) {thead.append(tr);}
 					});
@@ -73,20 +69,19 @@
 						var tr = $('<tr>');
 						$(row).children("div").each(function(iii, col){
 							var td = $('<td>');
-							if(iii!==4){
-								if(iii==2||iii==5){
-									td.append($(this).html()).addClass('hidden-xs hidden-sm');
-								}else{
-									colhtml = $(this).html()
-									if(iii==0){
-									    var str = colhtml.split("&nbsp;");
-									    colhtml = str[0]+'<span class="hidden-xs hidden-sm">'+str[1]+'</span><span class="hidden-md hidden-lg hidden-xl">'+coin+'</span>';
-									}
-									td.append(colhtml);
+							if(iii==3||iii==5){
+								//If MarketCap OR Buttons Col 
+								td.append($(this).html()).addClass('hidden-xs hidden-sm');
+							}else{
+								colhtml = $(this).html()
+								if(iii==0){
+									//If Coin Col 
+								    var str = colhtml.split("&nbsp;");
+								    colhtml = str[0]+'<span class="hidden-xs hidden-sm">'+str[1]+'</span><span class="hidden-md hidden-lg hidden-xl">'+coin+'</span>';
 								}
-								tr.append(td).addClass('classss');
+								td.append(colhtml);
 							}
-							
+							tr.append(td).addClass('classss');
 						});
 						if (!isOdd(i)) {tbody.append(tr.attr("data-coin", coin));}
 					});
@@ -101,6 +96,10 @@
 
 		//Removes Large 3-Col Panel moving coins up page 
 		$('.panel').parent().remove();
+
+		//Removes Existing Filter Input
+		$('.filtercoins').parent().remove();
+		
 
 		//Converts Coinspot list to Table
 		$('ul.listgroup').CoinTable();
@@ -127,15 +126,10 @@
 		//Adds clickable hyperlinks to rows
 		$('#CoinTable tbody').on('click', 'tr', function () {
         	var coin = $(this).data("coin");
-        	//Check if Buy or Sell page using H1
-        	if($('h1').html()=="Buy Coins"){
-        		window.location = "/buy/"+coin;
-        	} else if ($('h1').html()=="Sell Coins"){
-				window.location = "/sell/"+coin;
-        	}
+       		window.location = "/buy/"+coin;
     	} );
 
-    	//Update navbar branding on BUY/SELL list pages to Coinspot++
+    	//Update navbar branding on tradecoins list page to Coinspot++
     	//Avoids confusion about which pages extension effects
     	var branding = $('.navbar-brand').html();
     	$('.navbar-brand').html(branding+"++");
