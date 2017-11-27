@@ -14,18 +14,18 @@ Coinspot++ is [available to install via the Chrome Web Store](https://chrome.goo
 
 We recommend bookmarking these pages in Chrome if you frequent them often. Advanced users can clone this repository and run a local version of the extension in developer mode.
 
-### Features
+### Effected Pages
 
 Coinspot++ will currently ONLY effect the following pages:
 * https://www.coinspot.com.au/tradecoins
 * https://www.coinspot.com.au/sellallcoins
 
-```
+## Features
+
 * Converts BUY/SELL listings into a **Data Table**
 * Adds **Pagination** to reduce page size | 20, 50 or 100 coins per page.
 * Adds **Quick Search** input for finding specific coins or data
 * Adds **Sortable Columns** to Data Table for filtering by Coin, Buy Rate, Market Cap and 24-hour Change (default is Market Cap).
-```
 
 ## Built With
 
