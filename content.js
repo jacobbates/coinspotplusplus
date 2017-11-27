@@ -106,7 +106,7 @@
 
 		//Initiate Sortable DataTable
 		$('#CoinTable').DataTable({
-			"order": [[2, 'dsc']],
+			"order": [[3, 'dsc']],
 			"autoWidth": false,
 			"pageLength": 20,
 			"lengthMenu": [20, 50, 100],
@@ -135,4 +135,3 @@
     	$('.navbar-brand').html(branding+"++");
 
 	});
-
