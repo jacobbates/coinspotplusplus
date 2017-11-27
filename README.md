@@ -10,7 +10,7 @@ Coinspot++ is not affiliated with Coinspot or coinspot.com.au.
 
 ## Getting Started
 
-Coinspot++ is [available to install via the Chrome Web Store](https://chrome.google.com/webstore/detail/coinspot%20%20/kkhjbgfpkliinnoaibhkcifeddpechfc). Once enabled, simply browse to the coinspot.com.ay [buy page](https://www.coinspot.com.au/tradecoins) or [sell page](https://www.coinspot.com.au/sellallcoins) to view it in action.
+Coinspot++ is [available to install via the Chrome Web Store](https://chrome.google.com/webstore/detail/coinspot%20%20/kkhjbgfpkliinnoaibhkcifeddpechfc). Once enabled, simply browse to the coinspot.com.ay [tradecoins page](https://www.coinspot.com.au/tradecoins) to view it in action.
 
 We recommend bookmarking these pages in Chrome if you frequent them often. Advanced users can clone this repository and run a local version of the extension in developer mode.
 
